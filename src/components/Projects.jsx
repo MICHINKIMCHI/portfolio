@@ -1,20 +1,23 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import './Projects.css';
 
 const Projects = ({ projects }) => {
   return (
-    <section id="projects" className="bg-secondary">
+    <section className="projects" id="projects">
       <div className="container">
-        <div className="section-header animate-fade-in">
-          <h2 className="section-title">Selected Works</h2>
-          <p className="section-subtitle">
-            A showcase of businesses and applications I've built to solve real market needs.
-          </p>
+        <div className="section-header">
+          <h2 className="section-title">01. Selected Works</h2>
+          <p className="section-subtitle">Real-world businesses and applications built to solve market gaps.</p>
         </div>
         
-        <div className="projects-grid grid grid-cols-1 gap-8">
+        <div className="bento-grid">
           {projects.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} />
+            <ProjectCard 
+              key={project.id} 
+              project={project} 
+              index={index} 
+            />
           ))}
         </div>
       </div>

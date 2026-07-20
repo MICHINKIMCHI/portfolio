@@ -1,0 +1,36 @@
+.projects {
+  padding: 6rem 5%;
+  background-color: var(--bg-secondary);
+}
+
+.section-header {
+  margin-bottom: 4rem;
+  max-width: 600px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  letter-spacing: -0.05em;
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  grid-auto-flow: dense;
+}
+
+@media (max-width: 1024px) {
+  .bento-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}

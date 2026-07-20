@@ -1,44 +1,42 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Terminal } from 'lucide-react';
 import './ProjectCard.css';
 
 const ProjectCard = ({ project, index }) => {
-  const isEven = index % 2 === 0;
+  // Make the first project span 12 cols, others span 6 cols in the bento grid
+  const gridClass = index === 0 ? 'bento-full' : 'bento-half';
   
   return (
-    <div className={`project-card ${!isEven ? 'project-card-reverse' : ''} animate-fade-in delay-100`}>
+    <div className={`project-card ${gridClass}`}>
       <div className="project-image-container">
         <img src={project.imageUrl} alt={project.name} className="project-image" />
-        <div className="project-status-badge">{project.status}</div>
+        <div className="project-overlay"></div>
       </div>
       
       <div className="project-content">
-        <h3 className="project-name">{project.name}</h3>
-        <h4 className="project-tagline">{project.tagline}</h4>
-        
-        <p className="project-description">
-          {project.description}
-        </p>
-        
-        <div className="project-details">
-          <h5 className="details-title">Key Highlights:</h5>
-          <ul>
-            {project.details.map((detail, i) => (
-              <li key={i}>{detail}</li>
-            ))}
-          </ul>
+        <div className="project-header">
+          <span className="project-status mono">{project.status}</span>
+          <h3 className="project-name">{project.name}</h3>
+          <p className="project-tagline">{project.tagline}</p>
         </div>
         
+        <p className="project-description">{project.description}</p>
+        
         {project.insight && (
-          <div className="project-insight" style={{ marginTop: '1rem', marginBottom: '2rem', padding: '1.25rem', backgroundColor: 'var(--bg-tertiary)', borderLeft: '4px solid var(--accent)', borderRadius: '0 var(--radius-md) var(--radius-md) 0' }}>
-            <h5 className="details-title" style={{ color: 'var(--accent)' }}>Builder's Insight</h5>
-            <p style={{ fontSize: '0.95rem', fontStyle: 'italic', color: 'var(--text-secondary)' }}>{project.insight}</p>
+          <div className="project-insight-terminal">
+            <div className="terminal-header">
+              <div className="terminal-dots"><span></span><span></span><span></span></div>
+              <span className="terminal-title mono"><Terminal size={12}/> builder_insight.sh</span>
+            </div>
+            <div className="terminal-body mono">
+              <span className="prompt">$</span> {project.insight.replace('My thought process: ', '')}
+            </div>
           </div>
         )}
         
         {project.link && (
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-outline project-link">
-            Visit Project <ExternalLink size={16} />
+          <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary project-link">
+            Launch <ExternalLink size={16} />
           </a>
         )}
       </div>

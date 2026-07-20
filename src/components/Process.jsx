@@ -3,21 +3,21 @@ import './Process.css';
 
 const Process = ({ process }) => {
   return (
-    <section id="process" className="process-section">
+    <section className="process" id="process">
       <div className="container">
-        <div className="section-header text-center animate-fade-in">
-          <h2 className="section-title">{process.title}</h2>
-          <p className="section-subtitle mx-auto">
-            How I take ideas from a frustrating problem to a live, revenue-generating product.
-          </p>
+        <div className="section-header">
+          <h2 className="section-title">02. {process.title}</h2>
+          <p className="section-subtitle">How I build products from concept to revenue.</p>
         </div>
         
-        <div className="process-grid grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="process-timeline">
           {process.steps.map((step, index) => (
-            <div key={index} className={`process-card animate-fade-in delay-${(index + 1) * 100}`}>
-              <div className="process-number">0{index + 1}</div>
-              <h3 className="process-title">{step.title}</h3>
-              <p className="process-desc">{step.description}</p>
+            <div className="process-card" key={index}>
+              <div className="process-number mono">0{index + 1}</div>
+              <div className="process-content">
+                <h3 className="process-step-title">{step.title}</h3>
+                <p className="process-step-description">{step.description}</p>
+              </div>
             </div>
           ))}
         </div>
