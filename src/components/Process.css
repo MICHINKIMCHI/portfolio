@@ -21,16 +21,22 @@
 }
 
 .process-card {
-  display: flex;
-  align-items: center;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 2rem;
   transition: var(--transition);
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.process-card-header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
 }
 
 .process-card::before {
@@ -49,7 +55,13 @@
   transform: translateX(10px);
 }
 
-.process-card:hover::before {
+.process-card.expanded {
+  background-color: var(--bg-tertiary);
+  border-color: var(--border-hover);
+  transform: translateX(10px);
+}
+
+.process-card:hover::before, .process-card.expanded::before {
   background-color: var(--text-primary);
 }
 
@@ -64,7 +76,7 @@
   transition: var(--transition);
 }
 
-.process-card:hover .process-number {
+.process-card:hover .process-number, .process-card.expanded .process-number {
   color: #ffffff;
   text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
@@ -84,8 +96,46 @@
   max-width: 600px;
 }
 
+.process-expand-icon {
+  color: var(--text-tertiary);
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.process-card:hover .process-expand-icon, .process-card.expanded .process-expand-icon {
+  color: var(--text-primary);
+}
+
+.process-expanded-content {
+  padding: 0 2rem 2rem 2rem;
+  animation: slideDown 0.3s ease forwards;
+  transform-origin: top;
+}
+
+.expanded-inner {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+  margin-left: calc(2.5rem + 3rem); /* align with text, accounting for number width and margin */
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 768px) {
-  .process-card {
+  .process-card-header {
     flex-direction: column;
     align-items: flex-start;
     padding: 1.5rem;
@@ -97,7 +147,13 @@
     font-size: 2rem;
   }
   
-  .process-card:hover {
-    transform: translateY(-5px);
+  .process-expand-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  
+  .expanded-inner {
+    margin-left: 0;
   }
 }

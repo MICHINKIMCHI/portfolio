@@ -54,7 +54,7 @@
       "status": "In Development (Halted)",
       "link": "",
       "imageUrl": "/ennoic-sphere.png",
-      "insight": "My thought process: I wanted to push the boundaries of automated agency work by integrating Facebook and Google Ads APIs via Magentic and vibe coding. However, as an individual developer, the sheer scale of the architecture took a toll. The key takeaway was understanding capacity limits and the importance of focusing on core products rather than spreading too thin on massive infrastructure projects."
+      "insight": "My thought process: I wanted to push the boundaries of automated agency work by integrating Facebook and Google Ads APIs. I realized that traditional API integration was too brittle, so I pivoted to using Magentic and the Model Context Protocol (MCP). By exposing these platforms as MCP tools, I could let an AI agent dynamically 'vibe code' the campaigns and website creation. However, as an individual developer, the sheer scale of maintaining these agentic workflows took a toll. The key takeaway was understanding capacity limits and the importance of focusing on core products rather than spreading too thin on massive infrastructure projects."
     }
   ],
   "process": {
@@ -62,19 +62,23 @@
     "steps": [
       {
         "title": "Ideation & Gap Analysis",
-        "description": "Identifying real-world frustrations (like bad Kimchi) or market inefficiencies and conceptualizing a lean solution."
+        "description": "Identifying real-world frustrations (like bad Kimchi) or market inefficiencies and conceptualizing a lean solution.",
+        "expandedContent": "Great products don't start with code; they start with a painful problem. I look for markets where the existing solutions are either too expensive for indie hackers (like Shopify's app ecosystem) or fundamentally broken. I focus intensely on the user experience gap before writing a single line of logic."
       },
       {
         "title": "MVP Construction",
-        "description": "Starting simple. Validating demand using no-code or low-code tools like Google Sheets before investing heavily in architecture."
+        "description": "Starting simple. Validating demand using no-code or low-code tools like Google Sheets before investing heavily in architecture.",
+        "expandedContent": "I believe in proving the financial model first. For Michin Kimchi, I didn't need a massive database on day one. A Google Sheet and a basic form were enough to prove people would pay for the product. Only after hitting a revenue ceiling do I justify the engineering cost of a custom platform."
       },
       {
         "title": "AI-Assisted Scaling",
-        "description": "Using tools like Antigravity to rapidly build production-ready architecture (Supabase, Next/Vite, Stripe) that would traditionally take months."
+        "description": "Using tools like Antigravity to rapidly build production-ready architecture (Supabase, Next/Vite, Stripe) that would traditionally take months.",
+        "expandedContent": "This is where I shine. Once the model is validated, I act as the 'Product Architect' and use AI agents to write the code. By understanding data correlation, component structures, and state management, I can guide tools like Antigravity to build scalable, production-grade architectures in a fraction of the time a traditional team would take."
       },
       {
         "title": "Operation & Sustaining",
-        "description": "Focusing on the business metrics—marketing, CRM integration, and sustainable revenue—rather than getting bogged down in code."
+        "description": "Focusing on the business metrics—marketing, CRM integration, and sustainable revenue—rather than getting bogged down in code.",
+        "expandedContent": "Code is a liability; revenue is the goal. I structure my apps so they require minimal maintenance, allowing me to focus on growth channels, SEO/GEO optimization, and customer retention. The true test of a builder is whether their product survives the marketing phase."
       }
     ]
   }
