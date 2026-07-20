@@ -1,0 +1,78 @@
+{
+  "profile": {
+    "name": "Do Hyun Im",
+    "title": "AI-Empowered Product Builder",
+    "tagline": "If you don't like what's out there in the market, build one yourself. No reason not to, right?",
+    "bio": "I am a builder driven by curiosity. While I didn't study computer science, I realized that technical skills are no longer the boundaries of great product building. In an age where creativity and workflow are paramount, I love the freedom of creating things from scratch and learning through iteration. From identifying market gaps to launching 0-to-1 products, I am a jack-of-all-trades who thrives on building sustainable, scalable businesses.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/im-do-hyun-18083360/",
+      "email": "mailto:dlaehgus90@gmail.com"
+    }
+  },
+  "projects": [
+    {
+      "id": "michinkimchi",
+      "name": "Michin Kimchi",
+      "tagline": "Premium Kimchi for Singapore",
+      "description": "Frustrated with the lack of authentic kimchi in Singapore and the high costs of platforms like Shopify for home businesses, I built my own end-to-end e-commerce platform.",
+      "details": [
+        "Started as an MVP using Google Sheets and transitioned to a production-level MMP.",
+        "Built a full-stack architecture with Supabase, Resend, Cloudflare, GitHub, and Stripe.",
+        "Developed custom delivery mapping logic using the postal code system and integrated a CRM.",
+        "Mastered data correlation, structure building, and production-level workflows."
+      ],
+      "status": "Live & Generating Revenue",
+      "link": "https://michinkimchi.sg",
+      "imageUrl": "/michin-kimchi.png"
+    },
+    {
+      "id": "reefai",
+      "name": "Reef AI (Enlio Studio)",
+      "tagline": "Smart Water Test Scanner",
+      "description": "Enlio Studio is the shell for many apps to come. Reef AI was born from identifying a market demand for testing master water keys for aquatic life.",
+      "details": [
+        "Leveraged Vercel and Gemini Vision to analyze water data and generate interactive dashboards.",
+        "Launched rapidly (0-to-1 in a matter of weeks) to test market validation.",
+        "Currently experimenting with marketing and user acquisition strategies."
+      ],
+      "status": "Recently Launched",
+      "link": "https://reef.enliostudio.com",
+      "imageUrl": "/reef-ai.png"
+    },
+    {
+      "id": "ennoicsphere",
+      "name": "Ennoic Sphere",
+      "tagline": "Next-Gen SEO/GEO Optimization Agency",
+      "description": "A massive undertaking to integrate Facebook and Google Ads APIs via Magentic, combined with vibe coding for automated website creation.",
+      "details": [
+        "Designed to fully automate the ad creation and deployment pipeline.",
+        "Explored the upper limits of AI-assisted development and API integrations.",
+        "Currently halted to focus on individual developer capacity and core products."
+      ],
+      "status": "In Development (Halted)",
+      "link": "",
+      "imageUrl": "/ennoic-sphere.png"
+    }
+  ],
+  "process": {
+    "title": "My 0-to-1 Process",
+    "steps": [
+      {
+        "title": "Ideation & Gap Analysis",
+        "description": "Identifying real-world frustrations (like bad Kimchi) or market inefficiencies and conceptualizing a lean solution."
+      },
+      {
+        "title": "MVP Construction",
+        "description": "Starting simple. Validating demand using no-code or low-code tools like Google Sheets before investing heavily in architecture."
+      },
+      {
+        "title": "AI-Assisted Scaling",
+        "description": "Using tools like Antigravity to rapidly build production-ready architecture (Supabase, Next/Vite, Stripe) that would traditionally take months."
+      },
+      {
+        "title": "Operation & Sustaining",
+        "description": "Focusing on the business metrics—marketing, CRM integration, and sustainable revenue—rather than getting bogged down in code."
+      }
+    ]
+  }
+}
