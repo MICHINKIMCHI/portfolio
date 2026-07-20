@@ -29,6 +29,13 @@ const ProjectCard = ({ project, index }) => {
           </ul>
         </div>
         
+        {project.insight && (
+          <div className="project-insight" style={{ marginTop: '1rem', marginBottom: '2rem', padding: '1.25rem', backgroundColor: 'var(--bg-tertiary)', borderLeft: '4px solid var(--accent)', borderRadius: '0 var(--radius-md) var(--radius-md) 0' }}>
+            <h5 className="details-title" style={{ color: 'var(--accent)' }}>Builder's Insight</h5>
+            <p style={{ fontSize: '0.95rem', fontStyle: 'italic', color: 'var(--text-secondary)' }}>{project.insight}</p>
+          </div>
+        )}
+        
         {project.link && (
           <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-outline project-link">
             Visit Project <ExternalLink size={16} />

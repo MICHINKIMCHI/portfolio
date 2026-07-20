@@ -23,7 +23,8 @@
       ],
       "status": "Live & Generating Revenue",
       "link": "https://michinkimchi.sg",
-      "imageUrl": "/michin-kimchi.png"
+      "imageUrl": "/michin-kimchi.png",
+      "insight": "My thought process: I started this because I couldn't find a platform friendly for home-based businesses that didn't eat into margins with monthly fees ($10-15/mo) before even establishing sustainable MRR. The pivot from a Google Sheet MVP to a Supabase MMP was driven by necessity—I needed robust data correlation and custom delivery mapping logic to handle real-world operations efficiently without relying on expensive, inflexible SaaS platforms."
     },
     {
       "id": "reefai",
@@ -37,7 +38,8 @@
       ],
       "status": "Recently Launched",
       "link": "https://reef.enliostudio.com",
-      "imageUrl": "/reef-ai.png"
+      "imageUrl": "/reef-ai.png",
+      "insight": "My thought process: While exploring RAG and GEO optimization for Enlio Studio, I side-tracked into aquatic life communities and spotted a real pain point—testing master water keys. The development was rapid and fun, utilizing Vercel and Gemini Vision to automate data analysis. The biggest lesson here is that building the product is only half the battle; without a strong marketing channel, even a great tool struggles to gain MRR."
     },
     {
       "id": "ennoicsphere",
@@ -51,7 +53,8 @@
       ],
       "status": "In Development (Halted)",
       "link": "",
-      "imageUrl": "/ennoic-sphere.png"
+      "imageUrl": "/ennoic-sphere.png",
+      "insight": "My thought process: I wanted to push the boundaries of automated agency work by integrating Facebook and Google Ads APIs via Magentic and vibe coding. However, as an individual developer, the sheer scale of the architecture took a toll. The key takeaway was understanding capacity limits and the importance of focusing on core products rather than spreading too thin on massive infrastructure projects."
     }
   ],
   "process": {
